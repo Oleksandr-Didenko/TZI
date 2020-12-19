@@ -23,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         EditText t1 = findViewById(R.id.TextEmailAddress);
         EditText t2 = findViewById(R.id.TextPassword);
-        if( t1.getText().toString().isEmpty()  || !t2.getText().toString().isEmpty()) {
-            Toast.makeText(this, "Error: E-mail or Password is not entered!", Toast.LENGTH_LONG).show();
+        if( t1.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Please enter E-mail!", Toast.LENGTH_LONG).show();
+        }
+        else if (t2.getText().toString().isEmpty()){
+            Toast.makeText(this, "Please enter Password!", Toast.LENGTH_LONG).show();
         }
         else {
             Intent i = new Intent(this, TypeChooserActivity.class);
