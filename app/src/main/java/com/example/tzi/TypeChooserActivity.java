@@ -15,12 +15,25 @@ public class TypeChooserActivity extends AppCompatActivity {
     }
 
     public void encriptMessage(View v){
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+        String password = intent.getStringExtra("password");
+
+
         Intent i = new Intent(this, EncriptMessageActivity.class);
+        i.putExtra("username", username);
+        i.putExtra("password", password);
         startActivity(i);
     }
 
     public void decriptMessage(View v){
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+        String password = intent.getStringExtra("password");
+
         Intent i = new Intent(this, DecriptMessageActivity.class);
+        i.putExtra("username", username);
+        i.putExtra("password", password);
         startActivity(i);
     }
 

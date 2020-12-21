@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <EditText
-        android:id="@+id/TextEmailAddress"
+        android:id="@+id/TextEmailAddressSender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -53,7 +53,7 @@
         android:text="E-mail:"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@+id/TextEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/TextEmailAddressSender"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:text="Please enter E-mail and password"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/TextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/TextEmailAddressSender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
